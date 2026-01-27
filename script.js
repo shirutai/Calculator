@@ -1,23 +1,34 @@
 function add(a, b){
     return a + b;
 };
-function sub(a, op, b){
+function sub(a, b){
     return a - b;
 };
-function multiply(a, op, b){
+function multiply(a, b){
     return a * b;
 };
 function divide(a, b){
     return a / b;
-}
+};
+let result = 0;
+function calculate(a, b, oper){
+    switch (oper) {
+        case "+":
+            return add(a, b);
+            break;
+        case "-":
+            return sub(a, b);
+            break;
+        case "*":
+            return multiply(a, b);
+            break;
+        case "/":
+            return divide(a, b);
+            break;
+        default:
+            return
+            break;
+    }
+};
 
-let plus = "+";
-let a = 10;
-let b = 10;
-let result = "1 + 1";
-console.log(result.split("+"));
-const container = document.getElementById("container");
 
-function calcCreate(){
-    document.app
-}
