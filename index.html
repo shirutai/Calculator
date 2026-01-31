@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <div class="title">
+    <h1>Pink Calculator</h1>
+    </div>
+    <div class="container">
         <button class="clearBtn">C</button>
         <div class="calculator">
-            <div id="screen">
-                <div class="numOne"></div>
-                <div class="oper"></div>
-                <div class="numTwo"></div>
-            </div>
+            <input type="text" id="screen" readonly>
             <div class="buttons">
                 <div>
                     <button>1</button>
