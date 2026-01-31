@@ -12,7 +12,7 @@ function screenShow (btn){
     if(btn.tagName !== "BUTTON") return;
     if((operBtn || equalBtn) && second != "" && operator != ""){
         first = calculate(first, second, operator);
-        calcScreen.value = first;
+        calcScreen.value = Math.round(first * 200) / 200;
         second = "";
         if(operBtn){
             operator = btn.textContent;
@@ -70,6 +70,3 @@ function calculate(a, b, oper){
             break;
     };
 };
-
-
-
